@@ -1,0 +1,68 @@
+:root {
+    --main_color: #49bfa9;
+    --secondary_color: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#image {
+    display: none;
+}
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.btn_own {
+    padding: 10px 25px;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: 2px solid var(--main_color);
+    color: var(--main_color);
+    border-radius: 5px;
+    transition: all ease 0.5s;
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0, .5);
+}
+
+.btn_own:hover {
+    border: 2px solid var(--secondary_color);
+    color: var(--secondary_color);
+    background: var(--main_color);
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0, .5);
+}
+
+.warp_speed__label {
+    color: var(--main_color);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#warp_speed {
+    width: 150px;
+}
